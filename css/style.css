@@ -1,6 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,700&display=swap");
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+* a {
+  text-decoration: none;
+}
+* li {
+  list-style: none;
+}
+
+.header {
+  width: 100%;
+  padding: 10px;
+  -webkit-box-shadow: 0 0 25px #fff;
+          box-shadow: 0 0 25px #fff;
+  background: -webkit-gradient(linear, left top, right top, from(rgb(23, 23, 23)), to(rgb(49, 49, 49)));
+  background: linear-gradient(90deg, rgb(23, 23, 23) 0%, rgb(49, 49, 49) 100%);
+}
+.header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 15px;
+}
+.header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+.header__logo form button {
+  border: none;
+  background: #fff;
+  width: 20px;
+  height: 20px;
+}
+.header__logo a {
+  color: #fff;
+  font-size: 48px;
+}
+.header__navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__navigation nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 25px;
+}
+.header__navigation nav ul li a {
+  color: #fff;
+  font-size: 20px;
+  border-bottom: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.header__navigation nav ul li a:hover {
+  border-bottom: 1px solid rgb(180, 180, 180);
 }
