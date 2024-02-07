@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,700&display=swap');
+
+$back_aside: linear-gradient(10deg, rgba(82,0,97,1) 0%, rgba(195,0,240,1) 100%);
+$filt: invert(100%) sepia(100%) saturate(100%) hue-rotate(87deg) brightness(119%) contrast(119%);
+
 *{
     margin: 0;
     padding: 0;
@@ -10,5 +14,43 @@
     }
     li{
         list-style: none;
+    }
+}
+aside{
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap:80px;
+
+        padding: 20px;
+        position: sticky;
+        float: left;
+        border-radius: 10px;
+        background: rgb(82,0,97);
+        background: $back_aside;
+
+        .aside__navigation{
+            nav ul{
+                display: flex;
+                flex-direction: column;
+                gap:20px;
+
+                li{
+                    background-color: rgb(82,0,97);
+                    padding:10px;
+                    border-radius: 10px;
+                    transition: background-color .2s;
+
+                    &:hover{
+                        background-color: rgb(68, 0, 80);
+                        cursor: pointer;
+                    }
+                    a img{
+                        width: 50px;
+                        filter: $filt;
+                    }
+                } 
+            }
+        }
     }
 }
