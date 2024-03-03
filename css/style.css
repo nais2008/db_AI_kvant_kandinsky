@@ -109,3 +109,33 @@ aside .container .footer__text p {
   color: rgb(195, 0, 240);
   width: 50px;
 }
+
+.wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100dvh;
+  gap: 40px;
+}
+
+.container {
+  max-width: 1720px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.container header .header-container {
+  max-width: 100%;
+  height: 100px;
+  background-color: linear-gradient(10deg, rgb(82, 0, 97) 0%, rgb(195, 0, 240) 100%);
+}
